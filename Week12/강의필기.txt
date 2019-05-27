@@ -1,0 +1,14 @@
+read와 write를 random access 수행
+n번째 자리로 점프
+전체 레코드를 저장할 수 있는 공간을 생성
+n개만큼 write
+비어있는 파일을 호출하여 seek 후 write 수행
+모든 레코드에 대해 최대사이즈를 줌 // last[15], first[10]: 마지막에 강제로 '\0'를 넣음
+seek로 이동 => (n-1)*size();
+
+Severity	Code	Description	Project	File	Line	Suppression State
+Error	C4996	'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::copy': Call to 'std::basic_string::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. 
+To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'	test1113_8	c:\users\aomor\source\repos\test1113\test1113_8\clientdata.cpp	29	
+
+Severity	Code	Description	Project	File	Line	Suppression State
+Error	C4996	'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.	test1113_9	c:\users\aomor\source\repos\test1113\test1113_9\test1113_9.cpp	9	

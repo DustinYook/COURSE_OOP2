@@ -1,0 +1,6 @@
+http://blog.naver.com/ygsgun/20063999903  // set_new_handler
+중간고사: Base/Derived Class, Inheritance
+기말고사: File-Processing
+https://isocpp.org/faq    // C++ 유용한 사이트
+다음 주에 파일입출력관련 2주짜리 프로젝트 제시 // 전화번호부 프로그램이 기초
+특정 키에 해당되는 레코드를 수정하는 기능 구현필요

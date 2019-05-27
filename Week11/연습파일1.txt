@@ -1,0 +1,59 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <fstream>
+#include <cstdlib>
+using namespace std;
+
+int main(void)
+{
+	ofstream outClientFile("scoreboard.txt", ios::out);
+	if (!outClientFile)
+	{
+		cerr << "File could not be found" << endl;
+		exit(EXIT_FAILURE);
+	}
+	cout << "Enter the student ID, sub1, sub2, and sub3" << endl;
+	cout << "Enter end-of-file to end input" << endl;
+	string id;
+	double sub1, sub2, sub3;
+	int cnt = 0;
+	while (cin >> id >> sub1 >> sub2 >> sub3)
+	{
+		outClientFile << id << " " << sub1 << " " << sub2 << " " << sub3 << endl;
+		cnt++;
+	}		
+
+	ifstream inClientFile("scoreboard.txt", ios::in);
+	if (!inClientFile)
+	{
+		cerr << "File could not be opened" << endl;
+		exit(EXIT_FAILURE);
+	}
+
+	cout << setw(12) << left << "ID";
+	cout << setw(12) << left << "Subject1";
+	cout << setw(12) << left << "Subject2";
+	cout << setw(12) << left << "Subject3";
+	cout << setw(12) << left << "Total";
+	cout << setw(12) << left << "Average" << endl;
+	for (int i = 0; i < 68; i++)
+		cout << "=";
+	cout << endl;
+
+	while (inClientFile >> id >> sub1 >> sub2 >> sub3)
+	{
+		cout << setw(12) << left << id;
+		cout << setw(12) << left << sub1;
+		cout << setw(12) << left << sub2;
+		cout << setw(12) << left << sub3;
+		cout << setw(12) << left << (sub1+sub2+sub3);
+		cout << setw(12) << left << (sub1+sub2+sub3)/3.0 << endl;
+	}
+	for (int i = 0; i < 68; i++)
+		cout << "=";
+	cout << endl;	
+
+	system("pause");
+	return 0;
+}

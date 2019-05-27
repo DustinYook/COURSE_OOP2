@@ -1,0 +1,4 @@
+﻿  Main.cpp
+c:\users\aomor\desktop\2017년 2학기\02_객체지향프로그래밍2\03_실습자료\15주차 실습\15주차\15주차_4\main.cpp(69): error C3861: 'outputLine': identifier not found
+c:\users\aomor\desktop\2017년 2학기\02_객체지향프로그래밍2\03_실습자료\15주차 실습\15주차\15주차_4\main.cpp(102): error C2084: function 'int main(void)' already has a body
+  c:\users\aomor\desktop\2017년 2학기\02_객체지향프로그래밍2\03_실습자료\15주차 실습\15주차\15주차_4\main.cpp(9): note: see previous definition of 'main'

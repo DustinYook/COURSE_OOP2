@@ -1,0 +1,26 @@
+실습 범위 13, 14, 17, 18 (한정 범위) => 여기에서만 출제 (반드시 예제 코딩들 전부 다 해봐야함에 유의!!)
+Function Template 시험범위 아님
+2문항 출제 (1시간 30분) // 1문항 1시간(어려움), 1문항 30분(상대적으로 쉬움) // 조건 제시
+1시간짜리는 헤더파일도 없고, 처음부터 끝까지 알아서 코딩, 30분짜리는 그거는 아님
+=======================================================================================================
+1) Function exit terminates a program. // 13장, 14장
+the argument to exit is returned to the environment from which the program was invoked.
+passing EXIT_SUCCESS (also defined in <cstdlib>) to exit indicates that the program terminated normally; 
+passing any other value (in this case EXIT_FAILURE)
+indicates that the program terminated due to an error.
+========================================================================================================
+2)Reading Data from a squential file
+file-position pointer
+member functions tellg and tellp (of istream and ostream, respectively)
+returns current position of the file-position pointer as type long
+ex) location = fileobject.tellg(); 
+    location = fileobject.tellp(); 
+========================================================================================================
+파이러리 무조건 나오니 특히 신경써서 공부할 것
+작업선택할 수 있도록 선택할 수 있도록 
+========================================================================================================
+input the three sides of triangle: 3, 4, 5
+total area of the triangle = 6;
+continue? if not(??, ??0, ??0): 1, 2, 3
+input error!
+throw~catch

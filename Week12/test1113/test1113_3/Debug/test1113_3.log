@@ -1,0 +1,14 @@
+﻿  test1113_3.cpp
+c:\users\aomor\source\repos\test1113\test1113_3\test1113_3.cpp(9): error C2833: 'operator MyFloat' is not a recognized operator or type
+c:\users\aomor\source\repos\test1113\test1113_3\test1113_3.cpp(9): error C2059: syntax error: 'newline'
+c:\users\aomor\source\repos\test1113\test1113_3\test1113_3.cpp(9): error C2238: unexpected token(s) preceding ';'
+c:\users\aomor\source\repos\test1113\test1113_3\test1113_3.cpp(23): error C2440: 'static_cast': cannot convert from 'MyInt' to 'MyFloat'
+  c:\users\aomor\source\repos\test1113\test1113_3\test1113_3.cpp(23): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\aomor\source\repos\test1113\test1113_3\test1113_3.cpp(29): error C2738: 'operator MyFloat': is ambiguous or is not a member of 'MyInt'
+  c:\users\aomor\source\repos\test1113\test1113_3\test1113_3.cpp(5): note: see declaration of 'MyInt'
+c:\users\aomor\source\repos\test1113\test1113_3\test1113_3.cpp(30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\aomor\source\repos\test1113\test1113_3\test1113_3.cpp(31): error C2065: 'Num': undeclared identifier
+c:\users\aomor\source\repos\test1113\test1113_3\test1113_3.cpp(32): error C2440: 'return': cannot convert from 'MyFloat' to 'int'
+  c:\users\aomor\source\repos\test1113\test1113_3\test1113_3.cpp(32): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\aomor\source\repos\test1113\test1113_3\test1113_3.cpp(33): error C2617: '$S1': inconsistent return statement
+  c:\users\aomor\source\repos\test1113\test1113_3\test1113_3.cpp(29): note: see declaration of '$S1'

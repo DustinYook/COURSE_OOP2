@@ -1,0 +1,60 @@
+// fig 14.14
+int enterChoice();
+void createTextFile(fstream&);
+void updateRecord(fstream&);
+void newRecord(fstream&);
+void deleteRecord(fstream&);
+void outputLine(ostream&, const ClientData&);
+int getAccount(const char* const);
+
+enum Choices { PRINT = 1, UPDATE, NEW, DELETE, END };
+
+================================================================
+		// fig 14.14
+	fstream inOutCredit("credit.dat", ios::in | ios::out | ios::binary);
+	if (!inOutCredit)
+	{
+		cerr << "File could not be found." << endl;
+		exit(EXIT_FAILURE);
+	}
+	int choice;
+	while ((choice = enterChoice()) != END)
+	{
+		switch (choice)
+		{
+		case PRINT:
+			createTextFile(inOutCredit);
+			break;
+		case UPDATE:
+			updateRecord(inOutCredit);
+			break;
+		case NEW:
+			newRecord(inOutCredit);
+			break;
+		case DELETE:
+			deleteRecord(inOutCredit);
+			break;
+		default:
+			cerr << "Incorrect Choice" << endl;
+			break;
+		} // end switch
+		inOutCredit.clear();
+	}
+============================================================
+
+int enterChoice()
+{
+	cout << "\nEnter your choice" << endl
+		<< "1 - store a formatted text file of accouts" << endl
+		<< "    called \"print.txt\" for printing" << endl
+		<< "2 - update an account" << endl
+		<< "3 - add a new account" << endl
+		<< "4 - delete an account" << endl
+		<< "5 - end program\n? ";
+
+	int menuChoice;
+	cin >> menuChoice;
+	return menuChoice;
+}
+
+void

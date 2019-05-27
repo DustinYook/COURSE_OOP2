@@ -1,0 +1,3 @@
+1. 가시적인 변수와 이를 정의하는 정의문 번호 적기 (프로그램 소스보고 판단하는 유형인듯)
+2. C 스타일 문장인 acces = acces + 100;에 대해 가능한 바인딩에 대해 설명하고, 바인딩 시간에 대해 서술
+3. 4가지 변수의 종류에 대해 정의, 목적, 장점, 단점 설명하시오.(static, stack-dynamic, implict heap-dynamic, explicit heap-dynamic)
